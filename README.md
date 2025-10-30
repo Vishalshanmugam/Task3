@@ -52,17 +52,17 @@ git clone https://github.com/Vishalshanmugam/Task3.git
 cd Task3
 ```
 
-# 2️⃣ Install dependencies
+## 2️⃣ Install dependencies
 npm install
-# (or: yarn install)
+## (or: yarn install)
 
-# 3️⃣ Start development server
+## 3️⃣ Start development server
 npm run dev
 
    ![Output Screenshot](https://github.com/Vishalshanmugam/Task3/blob/main/Screenshot/screenshot1.png)
 
-# 4️⃣ Open the app
-# Visit the printed local URL (typically http://localhost:3000)
+## 4️⃣ Open the app
+## Visit the printed local URL (typically 'http://localhost:3000')
 
    ![Output Screenshot](https://github.com/Vishalshanmugam/Task3/blob/main/Screenshot/screenshot2.png)
 
