@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# 🌐 Task 3 – Web UI Frontend (React + TypeScript + Ant Design)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements the **frontend user interface** for the Kaiburr Task 1 backend application.  
+It allows you to **create**, **search**, **delete**, and **run commands** for “Task” objects stored in MongoDB via REST API endpoints.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🆕 Create new task records  
+- 🔍 Search tasks by name or command  
+- 🗑️ Delete existing tasks  
+- ▶️ Execute shell commands and view their output  
+- 📋 View all stored tasks in an elegant Ant Design table  
+- ♿ Built with usability & accessibility best practices  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Layer | Technology |
+|--------|-------------|
+| Frontend | React 19 + TypeScript + Vite |
+| UI Library | Ant Design |
+| Backend API | Spring Boot (Java – Task 1) |
+| Database | MongoDB |
+| Styling | Ant Design + Tailwind (optional) |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Before you run this app:
+
+1. ✅ **Backend (Task 1)** must be running at  
+   `http://localhost:8080/api/tasks`  
+   (Confirm with: `curl http://localhost:8080/api/tasks`)
+
+   ![Output Screenshot](https://github.com/Vishalshanmugam/Task3/blob/main/Screenshot/screenshot3.png)
+
+
+3. ✅ **Node.js v18+** installed  
+4. ✅ **npm** or **yarn**
+
+---
+
+## 🚀 Running the Frontend (Task 3)
+
+```bash
+# 1️⃣ Clone the Task 3 repository
+git clone https://github.com/Vishalshanmugam/Task3.git
+cd Task3
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 2️⃣ Install dependencies
+npm install
+# (or: yarn install)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 3️⃣ Start development server
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ![Output Screenshot](https://github.com/Vishalshanmugam/Task3/blob/main/Screenshot/screenshot1.png)
+
+# 4️⃣ Open the app
+# Visit the printed local URL (typically http://localhost:3000)
+
+   ![Output Screenshot](https://github.com/Vishalshanmugam/Task3/blob/main/Screenshot/screenshot2.png)
+
