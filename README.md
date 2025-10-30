@@ -54,11 +54,21 @@ cd Task3
 ```
 
 ### 2️⃣ Install dependencies
+```
 npm install
+```
 ### (or: yarn install)
-
+```
+yarn install
+```
 ### 3️⃣ Start development server
+```
 npm run dev
+```
+or
+```
+yarn run dev
+```
 
    ![Output Screenshot](https://github.com/Vishalshanmugam/Task3/blob/main/Screenshot/screenshot1.png)
 
